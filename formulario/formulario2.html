@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Formulário com Estilos CSS</title>
+<style>
+  /* Estilos CSS para o formulário */
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    padding: 20px;
+  }
+
+  form {
+    max-width: 600px;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 0 auto;
+  }
+
+  label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+
+  input[type="number"],
+  input[type="radio"],
+  select {
+    width: calc(100% - 20px); /* Calcula a largura, considerando o padding */
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box; /* Garante que o padding não afete a largura total */
+    font-size: 16px;
+  }
+
+  input[type="radio"] {
+    width: auto;
+    margin-right: 10px;
+  }
+
+  h1{
+    text-align: center;
+  }
+
+  input[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+
+  input[type="submit"]:hover {
+    background-color: #45a049; /* Cor mais escura ao passar o mouse */
+  }
+</style>
+</head>
+<body>
+
+<h1>Formulário com Estilos CSS</h1>
+
+<form action="#" method="post">
+  <label for="age">Idade:</label>
+  <input type="number" id="age" name="age" required><br><br>
+
+  <fieldset>
+    <legend>Sexo:</legend>
+    <label for="male">
+      <input type="radio" id="male" name="gender" value="male">
+      Masculino
+    </label>
+
+    <label for="female">
+      <input type="radio" id="female" name="gender" value="female">
+      Feminino
+    </label>
+  </fieldset><br>
+
+  <label for="country">País:</label>
+  <select id="country" name="country">
+    <option value="brasil">Brasil</option>
+    <option value="eua">EUA</option>
+    <option value="canada">Canadá</option>
+  </select><br><br>
+
+  <input type="submit" value="Enviar">
+</form>
+
+</body>
+</html>

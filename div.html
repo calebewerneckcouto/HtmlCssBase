@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo de Uso de Divs</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+        }
+        header {
+            background: #333;
+            color: #fff;
+            text-align: center;
+            padding: 1em 0;
+            margin-bottom: 20px;
+        }
+        nav {
+            float: left;
+            width: 30%;
+            background: #f2f2f2;
+            padding: 10px;
+        }
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        nav ul li {
+            padding: 8px 0;
+        }
+        .main {
+            float: left;
+            width: 70%;
+            padding: 10px;
+            background: #e6e6e6;
+        }
+        .footer {
+            clear: both;
+            text-align: center;
+            padding: 10px;
+            background: #333;
+            color: #fff;
+            position: relative;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Exemplo de Uso de Divs</h1>
+        </header>
+
+        <div class="main">
+            <h2>Conteúdo Principal</h2>
+            <p>Este é um exemplo de página utilizando divs para estruturar diferentes seções.</p>
+            <p>Aqui você pode colocar seu conteúdo principal, como artigos, informações, etc.</p>
+        </div>
+
+        <nav>
+            <h2>Menu de Navegação</h2>
+            <ul>
+                <li><a href="#">Página Inicial</a></li>
+                <li><a href="#">Sobre Nós</a></li>
+                <li><a href="#">Serviços</a></li>
+                <li><a href="#">Contato</a></li>
+            </ul>
+        </nav>
+
+        <div class="footer">
+            <p>Rodapé da Página &copy; 2024</p>
+        </div>
+    </div>
+</body>
+</html>

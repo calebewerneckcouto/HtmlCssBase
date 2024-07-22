@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo de Página Estruturada</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 20px;
+            padding: 0;
+        }
+        header {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+        }
+        nav {
+            background-color: #666;
+            padding: 5px;
+        }
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+        nav ul li {
+            display: inline;
+            margin-right: 10px;
+        }
+        main {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 20px;
+        }
+        article {
+            flex: 2;
+            background-color: #f2f2f2;
+            padding: 10px;
+            margin-right: 10px;
+        }
+        aside {
+            flex: 1;
+            background-color: #f9f9f9;
+            padding: 10px;
+        }
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+            clear: both;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Meu Blog</h1>
+        <nav>
+            <ul>
+                <li><a href="#">Início</a></li>
+                <li><a href="#">Sobre</a></li>
+                <li><a href="#">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <article>
+            <h2>Título do Artigo</h2>
+            <div>
+                <h3>Introdução</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus condimentum, dui vel fringilla eleifend, libero mauris mollis eros, a lacinia tellus magna nec urna.</p>
+            </div>
+            <div>
+                <h3>Desenvolvimento</h3>
+                <p>Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet.</p>
+            </div>
+            <div>
+                <h3>Conclusão</h3>
+                <p>Donec ipsum mauris, sagittis eu, accumsan in, aliquam non, velit. Vestibulum dapibus nunc ac augue. Nulla eu justo ut augue aliquam congue.</p>
+            </div>
+        </article>
+        <aside>
+            <div>
+                <h3>Artigos Relacionados</h3>
+                <ul>
+                    <li><a href="#">Como começar um blog</a></li>
+                    <li><a href="#">Dicas para escrever melhor</a></li>
+                    <li><a href="#">Ferramentas úteis para blogueiros</a></li>
+                </ul>
+            </div>
+            <div>
+                <h3>Links Úteis</h3>
+                <ul>
+                    <li><a href="#">Guia de SEO</a></li>
+                    <li><a href="#">Templates gratuitos</a></li>
+                    <li><a href="#">Plugins recomendados</a></li>
+                </ul>
+            </div>
+        </aside>
+    </main>
+    <footer>
+        <p>&copy; 2024 Meu Blog. Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>
